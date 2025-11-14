@@ -1,6 +1,5 @@
-const getFortune = () => {
+const Fortunes = () => {
 
-    const id = Math.floor(Math.random() * 10) + 1
     const messages = [
     "You will step on a lego.",
     "That XP farm will be finished... eventually.",
@@ -14,8 +13,7 @@ const getFortune = () => {
     "You will save big money at Menards."
     ]
 
-    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-    return randomMessage
+    return messages
 }
 
-module.exports = getFortune
+module.exports = Fortunes
